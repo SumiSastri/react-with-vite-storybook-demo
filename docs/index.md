@@ -27,10 +27,10 @@ CRA uses webpack and babel under the hood, and many devs prefer to move away fro
 
 For side projects CRA is still fine, but for larger apps, Vite may be a better option to consider as it does the bundling and code-splitting on the fly.
 
-Run the command `npm create vite@latest name-of-your-app`, select the framework of choice - this app uses TypeScript + SWC with React.
+Vite is great for client-side apps, less so for server-side rendered pages.
 
-Now cd (change directories) into your app and install node modules with ` npm install`
+Other options are Astro and Gatsby for SSG (static-side-generation). These are good for server-side rendering and static sites where the content does not change.
 
-A good tutorial to follow [Traversy Media Vite Crash Course](https://www.youtube.com/watch?v=89NJdbYTgJ8) for setup and scaffolding.
+NextJS is a framework that uses React under the hood and uses server-side-rendering(SSR), static-site-generation (SSG) as well as just client or server side rendering. You can pick and mix with this framework. Once you need authentication and server-side data in a larger app, this is a great choice.
 
-Run `npm run dev` and open your files in  your [local environment](http://localhost:5173/)
+Fullstack frameworks which handles both the front-end and backend, Remix is the most popular as it has been acquired by Shopify. Redwood, Blitz are other options at this level of app builders.
