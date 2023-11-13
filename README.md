@@ -1,5 +1,8 @@
 # react-with-vite-storybook-demo
-A demo of React with Vite and Storybook
+
+A demo of React with Vite and Storybook Version 7. There are breaking changes compared to V6. Storybook is currently on v7.5 and aims frequent minor updates going forward from the major V7 update.
+
+[Storybook documentation](https://storybook.js.org/docs/react/get-started/install/)
 
 Vite is an alternative to CRA (Create-React-App). The challenges with CRA is that it is built with wepack and babel under the hood. Vite uses ESBuild which is faster.
 
@@ -7,7 +10,10 @@ CRA has been used to build React projects but it has now become clunkier than th
 
 [Vite docs](https://vitejs.dev/guide/)
 
-Scripts:
+## Scripts
+
 _Repo Access_ 
-Run `npm run dev` and open your files in  your [local environment](http://localhost:5173/)
-Runb `npm run build` this creates a distribution file that will hydrate your HTML files open the [production environment](http://localhost:4173/) with an `npm run preview`
+
+- Run `npm run dev` and open your files in  your [local environment](http://localhost:5173/)
+
+- Run `npm run build` this creates a distribution file that will hydrate your HTML files open the [production environment](http://localhost:4173/) with an `npm run preview`

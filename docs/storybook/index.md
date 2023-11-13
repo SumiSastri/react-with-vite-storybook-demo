@@ -1,0 +1,1 @@
+# How Storybook v7 works with React and Vite
