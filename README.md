@@ -7,10 +7,6 @@ CRA has been used to build React projects but it has now become clunkier than th
 
 [Vite docs](https://vitejs.dev/guide/)
 
-Vite is great for client-side apps, less so for server-side rendered pages.
-
-Other options are Astro and Gatsby for SSG (static-side-generation). These are good for server-side rendering and static sites where the content does not change.
-
-NextJS is a framework that uses React under the hood and uses server-side-rendering(SSR), static-site-generation (SSG) as well as just client or server side rendering. You can pick and mix with this framework. Once you need authentication and server-side data in a larger app, this is a great choice.
-
-Fullstack frameworks which handles both the front-end and backend, Remix is the most popular as it has been acquired by Shopify. Redwood, Blitz are other options at this level of app builders.
+Scripts:
+Run `npm run dev` and open your files in  your [local environment](http://localhost:5173/)
+Runb `npm run build` this creates a distribution file that will hydrate your HTML files open the [production environment](http://localhost:4173/) with an `npm run preview`
