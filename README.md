@@ -14,5 +14,3 @@ Other options are Astro and Gatsby for SSG (static-side-generation). These are g
 NextJS is a framework that uses React under the hood and uses server-side-rendering(SSR), static-site-generation (SSG) as well as just client or server side rendering. You can pick and mix with this framework. Once you need authentication and server-side data in a larger app, this is a great choice.
 
 Fullstack frameworks which handles both the front-end and backend, Remix is the most popular as it has been acquired by Shopify. Redwood, Blitz are other options at this level of app builders.
-
-[Traversy Media Vite Crash Course](https://www.youtube.com/watch?v=89NJdbYTgJ8)
