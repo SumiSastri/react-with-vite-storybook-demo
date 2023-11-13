@@ -8,5 +8,6 @@ CRA has been used to build React projects but it has now become clunkier than th
 [Vite docs](https://vitejs.dev/guide/)
 
 Scripts:
+_Repo Access_ 
 Run `npm run dev` and open your files in  your [local environment](http://localhost:5173/)
 Runb `npm run build` this creates a distribution file that will hydrate your HTML files open the [production environment](http://localhost:4173/) with an `npm run preview`
