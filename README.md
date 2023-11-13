@@ -17,3 +17,8 @@ _Repo Access_
 - Run `npm run dev` and open your files in  your [local environment](http://localhost:5173/)
 
 - Run `npm run build` this creates a distribution file that will hydrate your HTML files open the [production environment](http://localhost:4173/) with an `npm run preview`
+
+- Once you have installed storybook you can use the script `npm run storybook` note this now [runs on a different local host port](http://localhost:6006/)
+
+_Note_
+To see changes on your stories you need to run the scripts for storybook on one tab and to see how this is implemented in your react-app you need to run a second localhost server with the scripts to see the rendering of your stories in the app.
