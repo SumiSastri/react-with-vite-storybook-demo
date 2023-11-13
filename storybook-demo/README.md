@@ -11,7 +11,6 @@ A good tutorial to follow [Traversy Media Vite Crash Course](https://www.youtube
 Run `npm run dev` and open your files in  your [local environment](http://localhost:5173/)
 Runb `npm run build` this creates a distribution file that will hydrate your HTML files open the [production environment](http://localhost:4173/) with an `npm run preview`
 
-
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:

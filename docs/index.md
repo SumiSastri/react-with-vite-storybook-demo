@@ -1,3 +1,6 @@
+
+# How Vite works under the hood
+
 Webpack takes dev files, for example,
 
     - CSS (cascading style sheet or `.css` files) 
