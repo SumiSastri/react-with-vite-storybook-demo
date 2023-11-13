@@ -27,4 +27,10 @@ CRA uses webpack and babel under the hood, and many devs prefer to move away fro
 
 For side projects CRA is still fine, but for larger apps, Vite may be a better option to consider as it does the bundling and code-splitting on the fly.
 
-Run the command `$ npm create vite@latest name-of-your-app`
+Run the command `npm create vite@latest name-of-your-app`, select the framework of choice - this app uses TypeScript + SWC with React.
+
+Now cd (change directories) into your app and install node modules with ` npm install`
+
+A good tutorial to follow [Traversy Media Vite Crash Course](https://www.youtube.com/watch?v=89NJdbYTgJ8) for setup and scaffolding.
+
+Run `npm run dev` and open your files in  your [local environment](http://localhost:5173/)
