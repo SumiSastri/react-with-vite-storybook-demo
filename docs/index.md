@@ -19,6 +19,12 @@ This process of hydrating HTML pages with JavaScript, can be slow and reduce sit
 
 If the hydration is fast site efficiency is better. Developers are constantly looking for tools that will improve site performance.
 
-Vite uses the modular framework of JavaScript bundles. This process is faster as the `import` and `export default` or `export` file structure is accessed to bundle JavaScript. Babel is not required as a transpiler. Instead of babel as a transpiler, Rollup is used to build files.
+Vite uses the modular framework of JavaScript bundles. Instead of babel as a transpiler, Vite uses ESBuild, which hooks into each ES-6 (ECMA Script), or more modern JavaScript bundles, to build code modules and packages.  This process is faster as the `import` and `export default` or `export` file structure is accessed to bundle JavaScript. Niether babel nor webpack therefore are required.
 
-Dev files now can move into production level quicker and an app can be deployed from dev to production environments more efficienctly.
+Dev files now can move into production level quicker and an app can be deployed from dev to production environments more efficienctly as a whole process is cut out. Hydration is executed quicker when you run `npm run build` to build your app packages as Vite uses Rollup at this stage.
+
+CRA uses webpack and babel under the hood, and many devs prefer to move away from CRA to Vite. However, this is a use-case choice.
+
+For side projects CRA is still fine, but for larger apps, Vite may be a better option to consider as it does the bundling and code-splitting on the fly.
+
+Run the command `$ npm create vite@latest name-of-your-app`
