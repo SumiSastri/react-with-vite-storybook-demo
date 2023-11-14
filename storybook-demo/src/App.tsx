@@ -1,9 +1,27 @@
 import { useState } from 'react'
 
 // styles
-import './App.css'
+// import './App.css'
 // import './scss/main.scss'
 import { Card, Button, Divider, Box, Text } from '@chakra-ui/react'
+
+const customButtonStyle = {
+  borderRadius: "8px",
+  borderColor:'yellow',
+  margin: "1em",
+  fontSize: "1em",
+  fontWeight: "bold",
+  fontFamily: "inherit",
+  cursor: "pointer",
+  transition: "border-color 0.25s",
+  color: 'darkmagenta',
+    ':hover': {
+      color: 'pink.500',
+    },
+    ':focus-visible': {
+      outline: '4px auto -webkit-focus-ring-color',
+    },
+}
 
 // components
 import HelloWorld from './components/helloWorld'
@@ -16,7 +34,7 @@ function App() {
       <div>
         <Card>
              <HelloWorld/>
-   <Button onClick={() => setCount((count) => count + 1)}>Chakra Stateful Button ... click to change counter number {count}</Button>
+   <Button sx={customButtonStyle} onClick={() => setCount((count) => count + 1)}>Chakra Stateful Button ... click to change counter number {count}</Button>
    <Divider/>
 
 <p>adding linear gradient and color transitions</p> 
@@ -33,8 +51,7 @@ function App() {
   fontWeight="extrabold"
 >
   Straight out of Chakra UI Style Props docs
-</Text>
-    
+</Text> 
         </Card>
       </div>
   )

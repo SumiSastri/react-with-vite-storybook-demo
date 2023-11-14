@@ -1,4 +1,4 @@
-import { Heading, Checkbox, ListItem, Badge,OrderedList} from "@chakra-ui/react"
+import { Heading, Checkbox, ListItem, Badge,OrderedList, Container} from "@chakra-ui/react"
 interface Props {}
 
 function HelloWorld(props: Props) {
@@ -6,9 +6,10 @@ function HelloWorld(props: Props) {
 
     return (
         <div>
-            <Heading>Hello World - the app is on</Heading>
+            <Heading my="30px" maxWidth="4xl" py="px">Hello World - you can see the app on</Heading>
             <Checkbox defaultChecked>{import.meta.env.VITE_API_URL}</Checkbox>
-         
+            {/* the div will show up as a section in the DOM */}
+         <Container as="section">
             <p>The app demos</p>
             <Badge>
             <OrderedList>
@@ -18,6 +19,7 @@ function HelloWorld(props: Props) {
                 <ListItem>Chakra UI version 2</ListItem>
             </OrderedList>
             </Badge>
+            </Container>
             </div>
     )
 }
