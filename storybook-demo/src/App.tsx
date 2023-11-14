@@ -1,8 +1,6 @@
 import { useState } from 'react'
 
 // styles
-// import './App.css'
-// import './scss/main.scss'
 import { Card, Button, Divider, Box, Text } from '@chakra-ui/react'
 
 const customButtonStyle = {
