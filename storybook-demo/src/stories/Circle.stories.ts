@@ -1,6 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
 import Circle from './Circle';
+
 const meta = {
   title: 'Circle',
   component: Circle,
@@ -12,9 +13,21 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const Board: Story = {
-// args are props
-args:{
-    varient: 'none'
-}
+// Add nested stories
+export const BaseCircle: Story = {}
+
+export const RedCircle: Story = {
+  args:{
+      variant: 'red', 
+  },
 };
+  export const YellowCircle: Story = {
+    args:{
+        variant: 'yellow', 
+      },
+    };
+    export const GreenCircle: Story = {
+      args:{
+          variant: 'green', 
+        },
+      };
