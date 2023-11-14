@@ -1,5 +1,6 @@
-// Refactor for variant
+// Refactor for variant - which is used in the style object
 // interface Props {}
+
 interface Props  {
     variant?: "blue"|'green' | 'yellow'| 'red'
 }
@@ -10,10 +11,10 @@ function Circle({variant = "blue"}: Props) {
     return (
 <div
  style={{
- background:variant, 
+ background:variant,
  borderRadius: '50%',
  width: '5%', 
- height: '3em', 
+ height: 'auto', 
  padding: '1em', 
  margin: '1%'}}
   />        

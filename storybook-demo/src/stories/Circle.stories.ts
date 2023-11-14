@@ -13,7 +13,7 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-// Add nested stories
+// Add nested stories - base circle is blue
 export const BaseCircle: Story = {}
 
 export const RedCircle: Story = {
