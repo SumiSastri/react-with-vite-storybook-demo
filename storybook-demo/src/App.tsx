@@ -1,7 +1,7 @@
 import { useState } from 'react'
 
 // styles
-import { Card, Button, Divider, Box, Text } from '@chakra-ui/react'
+import { Card, Button, Divider, Box, Text, Flex, Spacer, VStack } from '@chakra-ui/react'
 
 const customButtonStyle = {
   borderRadius: "8px",
@@ -34,22 +34,25 @@ function App() {
              <HelloWorld/>
    <Button sx={customButtonStyle} onClick={() => setCount((count) => count + 1)}>Chakra Stateful Button ... click to change counter number {count}</Button>
    <Divider/>
-
+   <h2>Flex layouts</h2>
+<Flex bg="gray" justify="space-evenly" gap='2'>
+  <VStack>
 <p>adding linear gradient and color transitions</p> 
-<Box w="100%" h="200px" bgGradient="linear(to-t, green.200, pink.500)" />
-
+<Box flexGrow='1' w="100%" h="200px" bgGradient="linear(to-t, green.200, pink.500)" />
 <p>adding radial gradient and color transitions</p>
 <Box w="100%" h="200px" bgGradient="radial(gray.300, yellow.400, pink.200)" />
-
 <p>adding the text gradient</p>
+</VStack>
+<Spacer/>
 <Text
+flexGrow='1'
   bgGradient="linear(to-l, #7928CA, #FF0080)"
   bgClip="text"
-  fontSize="6xl"
-  fontWeight="extrabold"
+  fontSize="xl"
 >
   Straight out of Chakra UI Style Props docs
 </Text> 
+</Flex>
         </Card>
       </div>
   )
