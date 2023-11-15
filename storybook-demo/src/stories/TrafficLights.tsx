@@ -1,3 +1,4 @@
+import ChakraCircle from "./ChakraCircle"
 
 interface Props {}
 
@@ -5,19 +6,13 @@ function TrafficLights(props: Props) {
     const {} = props
 
     return (
-        <div>
-<div
-style={{background:'red', borderRadius: '50%', width: '5%', height: '3em', padding: '1em', margin: '1%'}}
-  ></div>
-  <div
-  style={{background:'yellow', borderRadius: '50%', width: '5%', height: '3em', padding: '1em', margin: '1%'}}
-  ></div>
-    <div
-      style={{background:'green', borderRadius: '50%', width: '5%', height: '3em', padding: '1em', margin: '1%'}}
-  ></div>
+      // chakra styles can be mixed with styled components
+        <div style={{display: 'flex', flexDirection: 'column', gap: '10', border: '1px solid black', padding: '2px', margin: '2px', width: 'max-content', background: "gray" }}>
+<ChakraCircle variant="red"/>
+<ChakraCircle variant="yellow"/>
+<ChakraCircle variant="green"/>
         </div>
         
     )
 }
-
 export default TrafficLights

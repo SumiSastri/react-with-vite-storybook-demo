@@ -10,7 +10,7 @@ function ChakraCircle({variant = "black "}: Props) {
     return (
         <div>
             <Circle
-            size='200px' bg={variant}      
+            size='75px' bg={variant}      
             />
         </div>
     )

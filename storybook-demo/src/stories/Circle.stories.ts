@@ -15,7 +15,7 @@ type Story = StoryObj<typeof meta>;
 
 // Add nested stories - base circle is blue
 export const BaseCircle: Story = {}
-
+// every story needs to be exported
 export const RedCircle: Story = {
   args:{
       variant: 'red', 
