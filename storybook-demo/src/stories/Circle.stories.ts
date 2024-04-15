@@ -31,3 +31,20 @@ export const RedCircle: Story = {
           variant: 'green', 
         },
       };
+      export const WhiteCircle: Story = {
+        args:{
+            variant: 'white', 
+          },
+        };
+
+
+      // check me custom render
+      // export const FlagCircles: Story = {
+      //   render: (args) => <div>
+      //   <Circle variant="red"/>
+      //   <Circle variant="white"/>
+      //   <Circle variant="blue"/>
+      //   </div>
+    
+      //   };
+  

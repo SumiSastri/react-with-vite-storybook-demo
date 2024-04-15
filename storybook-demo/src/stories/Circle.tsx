@@ -2,10 +2,10 @@
 // interface Props {}
 
 interface Props  {
-    variant?: "blue"|'green' | 'yellow'| 'red'
+    variant?: "blue"|'green' | 'yellow'| 'red' |"white"
 }
 
-function Circle({variant = "blue"}: Props) {
+function Circle({variant = "white"}: Props) {
     const {} = variant
 
     return (
