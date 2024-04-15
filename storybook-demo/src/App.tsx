@@ -23,6 +23,7 @@ const customButtonStyle = {
 
 // components
 import HelloWorld from './components/helloWorld'
+import ThemedStories from './components/themedStories'
 // import { Button } from './stories/Button'
 
 function App() {
@@ -67,7 +68,7 @@ flexGrow='1'
 </Card>
 </Flex>
         </Card>
-    
+    <ThemedStories/>
       </div>
   )
 }

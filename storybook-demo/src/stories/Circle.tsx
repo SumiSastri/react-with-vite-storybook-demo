@@ -2,10 +2,10 @@
 // interface Props {}
 
 interface Props  {
-    variant?: "blue"|'green' | 'yellow'| 'red'
+    variant?: "blue"|'green' | 'yellow'| 'red' |"white"
 }
 
-function Circle({variant = "blue"}: Props) {
+function Circle({variant = "white"}: Props) {
     const {} = variant
 
     return (
@@ -13,8 +13,8 @@ function Circle({variant = "blue"}: Props) {
  style={{
  background:variant,
  borderRadius: '50%',
- width: '5%', 
- height: 'auto', 
+ width: '20px', 
+ height: '20px', 
  padding: '1em', 
  margin: '1%'}}
   />        
