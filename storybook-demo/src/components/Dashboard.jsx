@@ -22,9 +22,10 @@ export default function Dashboard() {
 
   return (
     <SimpleGrid spacing={10} minChildWidth={300}>
+      {/* check if there is data and then map through the data */}
             {toDos && toDos.map((toDo)=>(
         <Card key={toDo.id} borderTop="8px" borderColor="yellow.400" bg="white">
-          <CardHeader color="gray.700">
+          <CardHeader color="yellow.700">
             <Flex gap={5}>
               <Box w="50px" h="50px">
                 <Text>To Dos</Text>
@@ -43,7 +44,8 @@ export default function Dashboard() {
           <Divider borderColor="gray.200" />
           <CardFooter>
             <HStack>
-              <Button variant="ghost" leftIcon={<ViewIcon />}>Watch</Button>
+              {/* chakra ghost variant activates on hover state */}
+              <Button variant="ghost" leftIcon={<ViewIcon />}>View</Button>
               <Button variant="ghost" leftIcon={<EditIcon />}>Comment</Button>
             </HStack>
           </CardFooter>

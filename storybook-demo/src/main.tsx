@@ -42,8 +42,10 @@ import FlexLayoutDemo from './components/FlexLayoutDemo.tsx';
 import GridLayoutDemo from './components/GridLayoutDemo.tsx';
 import CardDemo from './components/CardDemo.tsx';
 import FormDemo from './components/FormDemo.tsx';
+
 // data fetching - data passed as a prop to the component via react router
-import { toDosLoader } from './utils/toDosLoader.ts';
+import { toDosLoader } from './apis/queries/toDosLoader.ts';
+import { submitNewToDo } from './apis/mutations/submitNewToDo.ts';
 
 // router and routes
   const router = createBrowserRouter(
@@ -56,7 +58,7 @@ import { toDosLoader } from './utils/toDosLoader.ts';
       <Route path ='chakra-card-demo' element={<CardDemo/>}/>
       <Route path ='chakra-form-demo' element={<FormDemo/>}/>
       <Route index element={<Dashboard />} loader={toDosLoader}  />
-      <Route path="create" element={<Create />} />
+      <Route path="create" element={<Create />}  action={submitNewToDo} />
       <Route path="profile" element={<Profile />} />
     </Route>
     )
