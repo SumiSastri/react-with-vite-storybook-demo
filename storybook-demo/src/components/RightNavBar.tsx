@@ -11,19 +11,14 @@ export default function RightNavBar() {
           Chakra basics
         </NavLink>
         </ListItem>
+
         <ListItem>
       <NavLink to='chakra-lists-demo'>
           <ListIcon as={LinkIcon} color="white" />
         Lists Demo
         </NavLink>
         </ListItem>
-        <ListItem>
-        <NavLink to='chakra-checkbox-demo'>
-          <ListIcon as={LinkIcon} color="white" />
-        Checkbox Demo
-        </NavLink>
-        </ListItem>
-
+   
         <ListItem>
         <NavLink to='chakra-flexlayout-demo'>
           <ListIcon as={LinkIcon} color="white" />
@@ -37,7 +32,27 @@ export default function RightNavBar() {
      Grid Layout Demo
         </NavLink>
         </ListItem>
-        
+
+        <ListItem>
+        <NavLink to='chakra-card-demo'>
+          <ListIcon as={LinkIcon} color="white" />
+    Card Demo
+        </NavLink>
+        </ListItem>
+
+        <ListItem>
+        <NavLink to='chakra-form-demo'>
+          <ListIcon as={LinkIcon} color="white" />
+   Form Demo
+        </NavLink>
+        </ListItem>
+
+        {/* <ListItem>
+        <NavLink to='chakra-gridlayout-demo'>
+          <ListIcon as={LinkIcon} color="white" />
+     Grid Layout Demo
+        </NavLink>
+        </ListItem> */}
         
         <ListItem>
         <NavLink to="/">
