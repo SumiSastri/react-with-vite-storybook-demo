@@ -9,14 +9,20 @@ import {
 
 import { ChakraProvider, extendTheme } from "@chakra-ui/react";
 // import './index.css'
+
 // components
 import App from './App.tsx'
 import Create from './components/Create.tsx'
 import Dashboard from './components/Dashboard'
 import Profile from './components/Profile'
 import RootLayout from './layouts/RootLayout'
+import ChakraBasics from './components/ChakraBasics.tsx';
+import ListsDemo from './components/ListsDemo.tsx';
+import CheckboxDemo from './components/CheckboxDemo.tsx';
+import FlexLayoutDemo from './components/FlexLayoutDemo.tsx';
+import GridLayoutDemo from './components/GridLayoutDemo.tsx';
 
-  // router and routes
+// router and routes
   const router = createBrowserRouter(
     createRoutesFromElements(
       <Route path="/" element={<RootLayout />}>
@@ -27,17 +33,15 @@ import RootLayout from './layouts/RootLayout'
 <Route path ='chakra-lists-demo' element={<ListsDemo/>}/>
 <Route path ='chakra-checkbox-demo' element={<CheckboxDemo/>}/>
 <Route path ='chakra-flexlayout-demo' element={<FlexLayoutDemo/>}/>
+<Route path ='chakra-gridlayout-demo' element={<GridLayoutDemo/>}/>
     </Route>
     )
   )
 
+
 // Extend Themes
 import { unionJackBrand } from './branding/union-jack/index.ts';
 import { satsumasBrand } from './branding/satsumas/index.ts';
-import ChakraBasics from './components/ChakraBasics.tsx';
-import ListsDemo from './components/ListsDemo.tsx';
-import CheckboxDemo from './components/CheckboxDemo.tsx';
-import FlexLayoutDemo from './components/FlexLayoutDemo.tsx';
 
 const colors= {
   brand: {

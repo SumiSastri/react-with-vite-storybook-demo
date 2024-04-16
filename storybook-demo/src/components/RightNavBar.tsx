@@ -27,9 +27,17 @@ export default function RightNavBar() {
         <ListItem>
         <NavLink to='chakra-flexlayout-demo'>
           <ListIcon as={LinkIcon} color="white" />
-     Flex Layout
+     Flex Layout Demo
         </NavLink>
         </ListItem>
+
+        <ListItem>
+        <NavLink to='chakra-gridlayout-demo'>
+          <ListIcon as={LinkIcon} color="white" />
+     Grid Layout Demo
+        </NavLink>
+        </ListItem>
+        
         
         <ListItem>
         <NavLink to="/">
