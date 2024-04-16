@@ -12,7 +12,7 @@
          "title":"Add links to the footer",
          "description":"The footer is currently empty. We need to add some links to important pages on the site.",
          "author":"Batman",
-         "img": "/assets/batman.png"
+         "img": "/assets/Batman.png"
       },
       {
          "id":3,
@@ -33,7 +33,7 @@
          "title":"Add social media links",
          "description":"There are no links to our social media profiles on the site. We need to add links to our Facebook, Twitter, and Instagram accounts in the header and footer.",
          "author":"Batman",
-         "img": "/src/assets/batman.png"
+         "img": "/assets/Batman.png"
       },
       {
          "id":6,
@@ -47,7 +47,7 @@
          "title":"Fix the responsive layout",
          "description":"The site's layout is not responsive. It does not look good on mobile devices. We need to make sure the site looks good on all devices.",
          "author":"Batman",
-         "img": "/assets/batman.png"
+         "img": "/assets/Batman.png"
       },
       {
          "id":8,
@@ -61,14 +61,14 @@
          "title":"Improve the design",
          "description":"The site's design is outdated. We need to update the site's color scheme and font to make it look more modern.",
          "author":"Batman",
-         "img": "/assets/batman.png"
+         "img": "/assets/Batman.png"
       },
       {
          "id":10,
          "title":"Add more products to the online store",
          "description":"We need to add more products to the online store. We also need to add categories and filters to make it easier for users to find what they are looking for.",
          "author":"Batman",
-         "img": "/assets/batman.png"
+         "img": "/assets/Batman.png"
       }
    ]
   }

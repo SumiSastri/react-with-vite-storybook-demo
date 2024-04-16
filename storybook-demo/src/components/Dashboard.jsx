@@ -11,7 +11,8 @@ import {
   CardFooter,
   HStack,
   Divider,
-  Button
+  Button,
+  Avatar,
 } from "@chakra-ui/react"
 import { useLoaderData } from "react-router-dom"
 
@@ -28,7 +29,7 @@ export default function Dashboard() {
           <CardHeader color="yellow.700">
             <Flex gap={5}>
               <Box w="50px" h="50px">
-                <Text>To Dos</Text>
+              <Avatar name={toDo.author} src={toDo.img} />
               </Box>
               <Box>
                 <Heading as="h3" size="sm">Job:  {toDo.title}</Heading>

@@ -1,6 +1,6 @@
-// styles
+import { UnlockIcon } from "@chakra-ui/icons"
 import {   Heading, FormControl,
-    FormLabel, ButtonGroup, Button,
+    FormLabel, ButtonGroup, Button,   useToast,
     // FormErrorMessage,
     FormHelperText, Input, Textarea, Radio, RadioGroup, Divider,Flex } from '@chakra-ui/react'
 
@@ -11,6 +11,19 @@ interface Props {}
 function FormDemo(props: Props) {
     // eslint-disable-next-line no-empty-pattern
     const {} = props
+    const savePopUp = useToast()
+
+    const fireSavePopUp = () => {
+      savePopUp({
+      title: 'Your data is saved and locked',
+      description: "Once saved data can not be changed do not click the Next button if this data is incorrect",
+      duration: 5000,
+      isClosable: true,
+      position: 'top',
+      status: 'warning',
+      icon: <UnlockIcon />,
+    })
+    }
 
     return (
         <div>
@@ -45,7 +58,7 @@ function FormDemo(props: Props) {
         <CheckboxDemo/>
         <Divider/>
         <ButtonGroup spacing='2'>
-      <Button variant='solid' colorScheme='blue'>
+      <Button onClick={fireSavePopUp}variant='solid' colorScheme='blue'>
         Save
       </Button>
       <Button variant='ghost' colorScheme='blue'>
