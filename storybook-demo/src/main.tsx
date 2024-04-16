@@ -33,7 +33,7 @@ import App from './App.tsx'
 import RootLayout from './layouts/RootLayout'
 // data fetching with Chakra and react router
 import Create from './components/Create.tsx'
-import Dashboard from './components/Dashboard'
+import Dashboard from './components/Dashboard.jsx'
 import Profile from './components/Profile'
 // chakra demos
 import ChakraBasics from './components/ChakraBasics.tsx';
@@ -42,6 +42,8 @@ import FlexLayoutDemo from './components/FlexLayoutDemo.tsx';
 import GridLayoutDemo from './components/GridLayoutDemo.tsx';
 import CardDemo from './components/CardDemo.tsx';
 import FormDemo from './components/FormDemo.tsx';
+// data fetching - data passed as a prop to the component via react router
+import { toDosLoader } from './utils/toDosLoader.ts';
 
 // router and routes
   const router = createBrowserRouter(
@@ -53,7 +55,7 @@ import FormDemo from './components/FormDemo.tsx';
       <Route path ='chakra-gridlayout-demo' element={<GridLayoutDemo/>}/>
       <Route path ='chakra-card-demo' element={<CardDemo/>}/>
       <Route path ='chakra-form-demo' element={<FormDemo/>}/>
-      <Route index element={<Dashboard />} />
+      <Route index element={<Dashboard />} loader={toDosLoader}  />
       <Route path="create" element={<Create />} />
       <Route path="profile" element={<Profile />} />
     </Route>
