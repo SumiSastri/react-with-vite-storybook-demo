@@ -5,6 +5,7 @@ import Circle from './Circle';
 const meta = {
   title: 'Circle',
   component: Circle,
+  tags: ['autodocs'],
   parameters: {
     layout: 'centred',
   },

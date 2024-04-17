@@ -5,6 +5,7 @@ interface Props {
 }
 
 function ChakraCircle({variant = "black "}: Props) {
+    // eslint-disable-next-line no-empty-pattern
     const {} = variant
 
     return (

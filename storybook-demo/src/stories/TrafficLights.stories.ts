@@ -5,6 +5,7 @@ import TrafficLights from './TrafficLights';
 const meta = {
   title: 'TrafficLights',
   component: TrafficLights,
+  tags: ['autodocs'],
   parameters: {
     layout: 'centred',
   },

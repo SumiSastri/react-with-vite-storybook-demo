@@ -33,6 +33,7 @@ export const Button = ({
   label,
   ...props
 }: ButtonProps) => {
+  // css from the css files define primary or secondary color
   const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
   return (
     <button
