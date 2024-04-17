@@ -13,7 +13,7 @@ const meta = {
   tags: ['autodocs'],
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {
-    backgroundColor: { control: 'color' },
+    onClick:{action: 'this button has been clicked'},
   },
 } satisfies Meta<typeof Button>;
 

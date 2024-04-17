@@ -2,7 +2,7 @@ import { HTMLAttributes, ReactNode } from 'react';
 
 import './button.css';
   /**
-   * Create your own custom props and their types
+   * These are custom props and can be expanded to fit the use case
    */
 interface ButtonProps extends HTMLAttributes<HTMLButtonElement> {
   /**
@@ -25,13 +25,17 @@ interface ButtonProps extends HTMLAttributes<HTMLButtonElement> {
    * Optional click handler
    */
   onClick?: () => void;
-    /**
+  /**
    * Optional child elements
    */
   children?: ReactNode;
-
+  /**
+   * Choose between a pill shaped button or traditional box shape
+   */
    variant?: 'pill' | 'box',
-
+  /**
+   * Determine the color of your text in the box
+   */
    color?: string;
 }
 
