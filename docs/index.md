@@ -6,6 +6,12 @@ Resources for this demo app
 
 3.[NetNinja Chakra UI Tutorial](https://www.youtube.com/playlist?list=PL4cUxeGkcC9hcnIeryurNMMcGBHp7AYlP)
 
-4. [React Router docs]( https://reactrouter.com/en/main/start/overview) & [NetNinja tute](https://www.youtube.com/watch?v=OMQ2QARHPo0&list=PL4cUxeGkcC9iVKmtNuCeIswnQ97in2GGf&index=1&t=0s)
+4.[React Router docs]( https://reactrouter.com/en/main/start/overview) & [NetNinja tute](https://www.youtube.com/watch?v=OMQ2QARHPo0&list=PL4cUxeGkcC9iVKmtNuCeIswnQ97in2GGf&index=1&t=0s)
 
 5. [json-server docs](https://www.npmjs.com/package/json-server)
+
+6. [Storybook tute](https://www.youtube.com/watch?v=CuGZgYo6-XY)
+
+7. [Storybook documentation](https://storybook.js.org/docs/react/get-started/install/)
+
+8. [Storybook Yann Braga tute](https://www.youtube.com/watch?v=x-x47qHq3nY)
