@@ -69,6 +69,8 @@ This should give you the end-point http://localhost:3000/tasks
 
 To scaffold cd (change directories) into storybook-demo and install the packages with the script `npx storybook@latest init`
 
+Depending on your stack you may want to refer to the [getting started docs](https://storybook.js.org/docs/get-started/setup)
+
 Accept ES Lint config and note that the packages take a little while to install.
 
 You can run the script `npm run storybook`` now to see the files.
