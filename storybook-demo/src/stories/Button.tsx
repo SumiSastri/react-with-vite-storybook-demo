@@ -1,6 +1,10 @@
-import './button.css';
+import { HTMLAttributes, ReactNode } from 'react';
 
-interface ButtonProps {
+import './button.css';
+  /**
+   * Create your own custom props and their types
+   */
+interface ButtonProps extends HTMLAttributes<HTMLButtonElement> {
   /**
    * Is this the principal call to action on the page?
    */
@@ -21,16 +25,26 @@ interface ButtonProps {
    * Optional click handler
    */
   onClick?: () => void;
+    /**
+   * Optional child elements
+   */
+  children?: ReactNode;
+
+   variant?: 'pill' | 'box',
+
+   color?: string;
 }
 
 /**
  * Primary UI component for user interaction
  */
 export const Button = ({
-  primary = false,
-  size = 'medium',
+  primary = true,
+  size,
   backgroundColor,
   label,
+  variant,
+  color,
   ...props
 }: ButtonProps) => {
   // css from the css files define primary or secondary color
@@ -38,9 +52,10 @@ export const Button = ({
   return (
     <button
       type="button"
-      className={['storybook-button', `storybook-button--${size}`, mode].join(' ')}
+      className={[`storybook-button--${variant}`, `storybook-button--${size}`, mode].join(' ')}
       style={{ backgroundColor }}
       {...props}
+      color={color}
     >
       {label}
     </button>

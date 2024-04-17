@@ -12,8 +12,10 @@ const config: StorybookConfig = {
     name: "@storybook/react-vite",
     options: {},
   },
+  // autogenerate docs for all components set globally
   docs: {
-    autodocs: "tag",
+    autodocs: true,
   },
+  
 };
 export default config;
