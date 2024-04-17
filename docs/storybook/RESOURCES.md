@@ -5,7 +5,8 @@
 - The [tools that storybook ships with](https://storybook.js.org/docs/get-started/browse-stories)
 
 __Tutes__
--  [Storybook tute](https://www.youtube.com/watch?v=CuGZgYo6-XY)
+
+-  [Storybook tute v6](https://www.youtube.com/watch?v=qSkHRVLcj6U)[v7 comparison](https://www.youtube.com/watch?v=CuGZgYo6-XY)
 
 -  [Storybook documentation](https://storybook.js.org/docs/react/get-started/install/)
 

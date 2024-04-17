@@ -23,8 +23,22 @@ The way to create a story and render different arguments is to create a utility 
 
 __Args vs ArgTypes__
 
-Arg types are props with logic, for example event handlers, or any functionality added to the element.
+ArgTypes are props with logic, for example event handlers, or any functionality added to the element.
 
+The argType, simply logs the call back function so that you know that the click event has been fired correctly.
 
-__Variants__
+This is possible because of the Storybook addons plugins that help you check the event has fired correctly but the actual logic is written at component level when you are developing the app.
 
+The argType prop therefore is only a synthetic event.
+
+__Comments and docs__
+
+Storybook stories are self documenting and you can change the config in `main.js` to autogenerate at a global level documentation.
+
+```
+ // autogenerate docs for all components set globally
+  docs: {
+    autodocs: true,
+  },
+  ```
+Another feature worth noting is that the comments provide non-tech users with a general description of how the feature works and how or why you would change the controls available - see the Button component example.
