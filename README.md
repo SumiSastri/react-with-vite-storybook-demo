@@ -8,6 +8,6 @@ The repo is in `/storybook-demo. Repo access in `storybook-demo/README.md`
 Chakra-React demo video:
 <div>
 <video width="320" height="250" controls>
-  <source src="docs/assets/chakra-react-demo.mov" type="video/mov">
+  <source src="docs/assets/chakra-typescript-react-demo.mp4" type="video/mp4">
 </video>
 </div>
