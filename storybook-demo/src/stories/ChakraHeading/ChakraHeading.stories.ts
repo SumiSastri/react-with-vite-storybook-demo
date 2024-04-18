@@ -1,10 +1,10 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import { ChakraHeading } from './Heading';
+import { ChakraHeading } from './ChakraHeading';
 
 // this is the default value - you can add args here that will cascade down the rest of the stories
 const meta = {
-  title: 'Example/ChakraHeading',
+  title: 'Chakra Examples/ChakraHeading',
   component: ChakraHeading,
   tags: ['autodocs'],
   parameters: {

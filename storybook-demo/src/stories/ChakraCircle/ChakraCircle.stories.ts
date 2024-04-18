@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 import ChakraCircle from './ChakraCircle';
 
 const meta = {
-  title: 'Example/ChakraCircle',
+  title: 'Chakra Examples/ChakraCircle',
   component: ChakraCircle,
   parameters: {
     layout: 'centred',

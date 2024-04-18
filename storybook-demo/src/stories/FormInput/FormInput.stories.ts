@@ -25,6 +25,11 @@ export const DefaultFormInput: Story = {
   },
 };
 
+// demo diff between name and storyname - name changes label on story
+DefaultFormInput.name="Medium Form Input - default version"
+// storyname changes story on side bar
+DefaultFormInput.storyName="Medium Form Input"
+
 export const SmallFormInput: Story = {
     args: {
       size: "small",
