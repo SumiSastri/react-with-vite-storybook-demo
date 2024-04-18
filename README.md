@@ -7,7 +7,8 @@
 </div>
 
 <div>
-<video width="320" height="250" controls>
-  <source src="docs/assets/chakra-typescript-react-demo.mp4" type="video/mp4">
+Chakra-React 
+<video>
+  <source src="docs/assets/chakra-typescript-react-demo.mp4" controls autoplay loop muted type="video/mp4" width="320" height="250">
 </video>
 </div>
