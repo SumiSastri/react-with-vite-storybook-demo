@@ -1,4 +1,4 @@
-import ChakraCircle from "./ChakraCircle"
+import ChakraCircle from "../ChakraCircle/ChakraCircle"
 
 interface Props {}
 

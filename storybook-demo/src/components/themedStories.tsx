@@ -1,5 +1,5 @@
 import { Card, Heading, Text,Box, SimpleGrid, Grid, GridItem, Divider } from "@chakra-ui/react"
-import Circle from "../stories/Circle"
+import Circle from "../stories/Circle/Circle"
 interface Props {}
 
 function ThemedStories(props: Props) {

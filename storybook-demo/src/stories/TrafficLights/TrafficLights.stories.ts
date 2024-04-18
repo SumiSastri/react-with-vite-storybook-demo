@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 import TrafficLights from './TrafficLights';
 
 const meta = {
-  title: 'TrafficLights',
+  title: 'Example/TrafficLights',
   component: TrafficLights,
   tags: ['autodocs'],
   parameters: {

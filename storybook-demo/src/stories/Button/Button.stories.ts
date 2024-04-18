@@ -12,6 +12,9 @@ const meta = {
   // This component will have an automatically generated Autodocs entry: https://storybook.js.org/docs/react/writing-docs/autodocs
   tags: ['autodocs'],
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
+  args: {
+    primary: true,
+  },
   argTypes: {
     onClick:{action: 'this button has been clicked'},
   },
@@ -24,16 +27,16 @@ type Story = StoryObj<typeof meta>;
 // More on writing stories with args: https://storybook.js.org/docs/react/writing-stories/args
 export const Primary: Story = {
   args: {
-    primary: false,
     label: 'Button',
     size: 'small',
     variant: 'pill'
   },
 };
 
+// each of these is a react component
 export const Secondary: Story = {
   args: {
-    primary:true,
+    primary: false,
     label: 'Click',
     variant: 'pill',
     size: 'medium',
@@ -44,13 +47,13 @@ export const Large: Story = {
   args: {
     size: 'large',
     label: 'Save',
-    color: 'white',
     backgroundColor: "#8017a6",
   },
 };
 
 export const Small: Story = {
   args: {
+    primary: false,
     size: 'small',
     label: 'Next',
     backgroundColor: '#bc5480',

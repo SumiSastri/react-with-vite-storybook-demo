@@ -1,3 +1,4 @@
+/* using torybook-button-- prevents global pollution of css - makes the css unique to storybook */
 .storybook-button--box {
   font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 700;
@@ -5,6 +6,7 @@
   cursor: pointer;
   display: inline-block;
   line-height: 1;
+  text-align: center;
 }
 
 .storybook-button--pill {
@@ -15,26 +17,49 @@
   cursor: pointer;
   display: inline-block;
   line-height: 1;
+  text-align: center;
 }
 
 .storybook-button--primary {
   color: white;
   background-color: #1ea7fd;
+  cursor: pointer;
+  text-align: center;
 }
 .storybook-button--secondary {
   color: #333;
   background-color: transparent;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
+  cursor: pointer;
+  text-align: center;
 }
 .storybook-button--small {
   font-size: 12px;
   padding: 10px 16px;
+  cursor: pointer;
+  text-align: center;
 }
 .storybook-button--medium {
   font-size: 14px;
   padding: 11px 20px;
+  cursor: pointer;
+  text-align: center;
 }
 .storybook-button--large {
   font-size: 16px;
   padding: 12px 24px;
+  cursor: pointer;
+  text-align: center;
+}
+.tsorybook-button--success{
+  background-color: greenyellow;
+  cursor: pointer;
+  padding: 11px 20px;
+  text-align: center;
+}
+.storybook-button--danger{
+  background-color: red;
+  cursor: pointer;
+  padding: 11px 20px;
+  text-align: center;
 }

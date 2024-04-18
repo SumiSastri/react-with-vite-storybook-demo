@@ -20,7 +20,7 @@ interface ButtonProps extends HTMLAttributes<HTMLButtonElement> {
   /**
    * Button contents
    */
-  label: string;
+  label?: string;
   /**
    * Optional click handler
    */
@@ -48,6 +48,7 @@ export const Button = ({
   backgroundColor,
   label,
   variant,
+  children,
   color,
   ...props
 }: ButtonProps) => {
@@ -56,12 +57,15 @@ export const Button = ({
   return (
     <button
       type="button"
+      // dynamic variants
       className={[`storybook-button--${variant}`, `storybook-button--${size}`, mode].join(' ')}
       style={{ backgroundColor }}
       {...props}
       color={color}
+  
     >
-      {label}
+    {label}
+    {children}
     </button>
   );
 };

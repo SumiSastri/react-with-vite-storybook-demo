@@ -1,0 +1,41 @@
+.storybook-form-input--small {
+    font-size: 12px;
+    padding: 10px 16px;
+    display: block;
+    border: 2px solid black;
+    width: 50%
+
+  }
+  .storybook-form-input--medium {
+    font-size: 14px;
+    padding: 11px 20px;
+    text-align: center;
+    display: block;
+    border: 2px solid black;
+    height: 3em;
+    width: 85%
+
+  }
+  .storybook-form-input--large {
+    font-size: 16px;
+    padding: 12px 24px;
+    text-align: center;
+    display: block;
+    border: 2px solid black;
+    height: 1em;
+    width:95%
+  }
+  .storybook-form-input--box {
+    border: 2px solid black;
+    border-radius: 1em;
+    height: 3em;
+    display: block;
+  }
+  
+  .storybook-form-input--pill {
+    font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    border: 2px solid black;
+    border-radius: 2em;
+    height: 1em;
+    display: inline-block;
+  }
