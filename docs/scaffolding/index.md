@@ -82,3 +82,22 @@ The package ships with demo files that you can tinker with. Import the `Button` 
 There are breaking changes compared to V6. Storybook is currently on v7.5 and aims frequent minor updates going forward from the major V7 update.
 
 [Storybook documentation](https://storybook.js.org/docs/react/get-started/install/)
+
+- [To use the accessibility addon](https://storybook.js.org/addons/@storybook/addon-a11y/)
+
+`npm i @storybook/addon-a11y --dev` this needs to be configured in `main.js` in the `.storybook` folder in the addons array like so:
+```
+addons: [
+    "@storybook/addon-links",
+    "@storybook/addon-essentials",
+    "@storybook/addon-onboarding",
+    "@storybook/addon-interactions",
+    '@storybook/addon-a11y',
+  ],
+ ``` 
+Restart the storybook server to apply
+
+__Gotchas__
+In v7 this add on does not work due to an icon package dependency or with Node v20 so uninstall and remove from addons array in config.
+
+`npm i @storybook/addon-a11y --dev`

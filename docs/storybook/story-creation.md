@@ -31,6 +31,10 @@ This is possible because of the Storybook addons plugins that help you check the
 
 The argType prop therefore is only a synthetic event.
 
+__Params vs Args__
+
+Params in Storybook control addons and can be at story level or globally in `preview.js` the config files of Story book. To read about [Storybook parameter hierarchy check the docs](https://storybook.js.org/docs/writing-stories/parameters)
+
 __Comments and docs__
 
 Storybook stories are self documenting and you can change the config in `main.js` to autogenerate at a global level documentation.
@@ -42,3 +46,23 @@ Storybook stories are self documenting and you can change the config in `main.js
   },
   ```
 Another feature worth noting is that the comments provide non-tech users with a general description of how the feature works and how or why you would change the controls available - see the Button component example.
+
+__Addons__
+
+Addons are additional packages that do not ship with the core library. For example [to use the accessibility addon](https://storybook.js.org/addons/@storybook/addon-a11y/) you will need to add the package to your dev dependencies and configure it.
+
+Design - you can use this addon to include Figma and designs into your workflow
+
+__Naming and sorting__
+
+[Read more about naming and sorting stories](https://storybook.js.org/docs/writing-stories/naming-components-and-hierarchy). The most useful take out from this section is to order stories in alphabetical order by adding options to `preview.js`
+
+```
+    options: {
+      // The `a` and `b` arguments in this function have a type of `import('@storybook/types').IndexEntry`. Remember that the function is executed in a JavaScript environment, so use JSDoc for IntelliSense to introspect it.
+      storySort: (a, b) =>
+        a.id === b.id ? 0 : a.id.localeCompare(b.id, undefined, { numeric: true }),
+    },
+```    
+
+
