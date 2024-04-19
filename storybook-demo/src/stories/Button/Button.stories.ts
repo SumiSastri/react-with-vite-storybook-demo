@@ -15,6 +15,7 @@ const meta = {
   args: {
     primary: true,
   },
+  // use the custom name for your onClick handler eg: like handleClick instead of default onClick
   argTypes: {
     onClick:{action: 'this button has been clicked'},
   },
